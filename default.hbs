@@ -28,7 +28,13 @@
     </header>
 
     {{{body}}}
-
+<footer class="site-footer">
+        <div class="inner">
+            {{!> footer-description}}
+            <section class="copyright">&copy; {{date format="YYYY"}} <a href="/">{{@blog.title}}</a>. All rights reserved.</section>
+        </div>
+    </footer>
+    
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
 </body>
